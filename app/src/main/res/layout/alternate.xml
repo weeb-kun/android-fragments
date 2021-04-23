@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_weight="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="runFragmentA"
+            android:text="Load A"/>
+
+        <Button
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="runFragmentB"
+            android:text="Load B"/>
+
+        <Button
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="toggle"
+            android:text="Toggle"/>
+
+    </LinearLayout>
+</LinearLayout>
